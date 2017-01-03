@@ -4,7 +4,7 @@
 ![IMAGE ALT TEXT](http://pds.joins.com/news/component/nocut/201211/12/12111130312_61400010.jpg)
 
 ## 1. 영웅 진영
-- 아이언피스트
+- 아이언 피스트
 - 닥터 스트레인지
 - 고스트 라이더
 - 아이언맨
