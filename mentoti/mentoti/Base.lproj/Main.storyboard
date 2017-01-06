@@ -32,6 +32,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vs-BY-xjN">
+                                <rect key="frame" x="0.0" y="64" width="375" height="341"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="keyboardDismiss:" destination="6mx-kO-B7D" eventType="touchUpInside" id="sE7-H5-aHW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -41,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YOV-mk-qpM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="784.79999999999995" y="781.25937031484261"/>
+            <point key="canvasLocation" x="3537" y="-66"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bgG-4g-6st">
@@ -66,9 +73,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PgS-LS-ATo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="785" y="1450"/>
+            <point key="canvasLocation" x="2596" y="-764"/>
         </scene>
-        <!--View Controller-->
+        <!--목록-->
         <scene sceneID="KH2-d7-eeZ">
             <objects>
                 <viewController id="WvJ-Py-lZA" sceneMemberID="viewController">
@@ -83,6 +90,10 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="새 파일 2017-01-04 20.58.41_1" translatesAutoresizingMaskIntoConstraints="NO" id="JBd-CT-4hJ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="CxF-W5-Y3B" appends="YES" id="Xe4-jK-osg"/>
+                                </connections>
                             </imageView>
                             <searchBar contentMode="redraw" fixedFrame="YES" text="멘토, 멘티 검색" translatesAutoresizingMaskIntoConstraints="NO" id="dM8-NS-VyZ">
                                 <rect key="frame" x="0.0" y="91" width="375" height="44"/>
@@ -95,7 +106,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rre-ak-OwA"/>
+                    <navigationItem key="navigationItem" title="목록" id="rre-ak-OwA"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="dug-WD-oYX" id="DT5-Zj-xoB"/>
                     </connections>
@@ -110,8 +121,9 @@
                         <outlet property="searchResultsDelegate" destination="WvJ-Py-lZA" id="3C0-R6-rSn"/>
                     </connections>
                 </searchDisplayController>
+                <swipeGestureRecognizer direction="right" id="CxF-W5-Y3B"/>
             </objects>
-            <point key="canvasLocation" x="784.79999999999995" y="99.400299850074973"/>
+            <point key="canvasLocation" x="1705" y="-89"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JYr-Qx-IsJ">
@@ -137,13 +149,138 @@
                                     <action selector="modalDismiss:" destination="86q-bp-SMh" eventType="touchUpInside" id="3hk-kB-JcF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfS-Ug-KWb">
+                                <rect key="frame" x="24" y="348" width="324" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="pn6-Hg-VxA" kind="presentation" id="djq-qI-dGc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3mN-Nx-KiU"/>
+                    <connections>
+                        <segue destination="wG0-hi-ElD" kind="show" identifier="ModalDismissPush" id="k4U-JD-fgR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k2n-ib-MFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5620" y="-143"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="w4o-na-yac">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kzi-4G-vnS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="wG0-hi-ElD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BId-QU-wmt"/>
+                        <viewControllerLayoutGuide type="bottom" id="pfB-Oo-U5W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c2x-lb-r2E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="IMG_0666" translatesAutoresizingMaskIntoConstraints="NO" id="ly7-hP-e0Y">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Osm-GT-3QX">
+                                <rect key="frame" x="5" y="41" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="뒤로가기"/>
+                                <connections>
+                                    <action selector="modalDismiss:" destination="wG0-hi-ElD" eventType="touchUpInside" id="YHc-gg-F12"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="k2n-ib-MFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1558" y="2511"/>
+            <point key="canvasLocation" x="6399" y="-143"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KYr-NC-FUT">
+            <objects>
+                <viewController id="dLZ-yj-9tl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UaP-59-vXK"/>
+                        <viewControllerLayoutGuide type="bottom" id="M6R-u4-EsV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BKc-Cm-oy4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="IMG_0664" translatesAutoresizingMaskIntoConstraints="NO" id="Wut-9f-2S9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhB-hq-DBd">
+                                <rect key="frame" x="313" y="46" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="modalDismissPush:" destination="dLZ-yj-9tl" eventType="touchUpInside" id="nFc-PI-K23"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqu-0t-9nt">
+                                <rect key="frame" x="13" y="46" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="뒤로가기"/>
+                                <connections>
+                                    <action selector="modalDismiss:" destination="dLZ-yj-9tl" eventType="touchUpInside" id="OHY-hT-Pki"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ht-RN-qDi">
+                                <rect key="frame" x="19" y="173" width="58" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="8ig-Wj-jvJ" kind="show" animates="NO" id="PUu-Q4-rEp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vhg-J9-mJZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c4h-lQ-dCa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6318" y="641"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Nwj-yf-CHF">
+            <objects>
+                <viewController id="8ig-Wj-jvJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GUo-G2-7nO"/>
+                        <viewControllerLayoutGuide type="bottom" id="hI8-Ru-cbI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DDO-4O-4ro">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="IMG_0665" translatesAutoresizingMaskIntoConstraints="NO" id="8Ex-gb-wyp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZa-sU-vH1">
+                                <rect key="frame" x="321" y="54" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="완료"/>
+                                <connections>
+                                    <action selector="modalDismissPush:" destination="8ig-Wj-jvJ" eventType="touchUpInside" id="ToY-hj-Urg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uoc-Qj-Nxr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7050" y="641"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xJj-SX-VSh">
@@ -166,7 +303,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="86q-bp-SMh" kind="modal" id="sTD-pe-5cg"/>
+                                    <segue destination="86q-bp-SMh" kind="presentation" id="DwP-ur-bdf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ha7-P0-Ovd">
@@ -177,11 +314,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="cBo-uB-gCO"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="aOT-ih-MUt"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mEF-AF-pqE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="785" y="2104"/>
+            <point key="canvasLocation" x="4356" y="-718"/>
         </scene>
         <!--홈-->
         <scene sceneID="tne-QT-ifu">
@@ -200,7 +338,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5t-nq-xyw">
-                                <rect key="frame" x="41" y="161" width="91" height="59"/>
+                                <rect key="frame" x="49" y="162" width="91" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -217,7 +355,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="786" y="-555"/>
+            <point key="canvasLocation" x="810" y="-809"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="YMU-aU-ydv">
@@ -267,13 +405,10 @@
                                     <action selector="modalDismiss:" destination="EU8-T4-EvM" eventType="touchUpInside" id="t2F-Y9-qnH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZX5-tD-ziR">
-                                <rect key="frame" x="34" y="319" width="302" height="113"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mpx-ds-Oht">
+                                <rect key="frame" x="283" y="245" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="modalDismissPush:" destination="EU8-T4-EvM" eventType="touchUpInside" id="gVy-0s-lAe"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -281,7 +416,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CYY-zY-vfB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1769" y="-1302"/>
+            <point key="canvasLocation" x="476" y="-89"/>
         </scene>
         <!--홈-->
         <scene sceneID="nsY-PZ-WgE">
@@ -301,7 +436,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H85-ug-O4S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="71" y="-555"/>
+            <point key="canvasLocation" x="-9" y="-764"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="47w-UJ-bX5">
@@ -324,7 +459,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5GV-iS-gIY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-871" y="294"/>
+            <point key="canvasLocation" x="3362" y="-1531"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dld-AR-97t">
@@ -343,7 +478,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ut3-Io-CSk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="70" y="101"/>
+            <point key="canvasLocation" x="1706" y="-764"/>
         </scene>
         <!--Item-->
         <scene sceneID="q0a-Hk-aek">
@@ -362,13 +497,34 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XS0-as-fhq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="70" y="783"/>
+            <point key="canvasLocation" x="3537" y="-742"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="moA-oF-ctd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pn6-Hg-VxA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sjT-uM-anR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dLZ-yj-9tl" kind="relationship" relationship="rootViewController" id="yfs-XJ-WWP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rWh-vF-e35" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5581.6000000000004" y="640.92953523238384"/>
         </scene>
     </scenes>
     <resources>
         <image name="IMG_0661" width="672" height="1168"/>
         <image name="IMG_0662" width="592" height="1040"/>
         <image name="IMG_0663" width="560" height="960"/>
+        <image name="IMG_0664" width="688" height="1216"/>
+        <image name="IMG_0665" width="704" height="1232"/>
+        <image name="IMG_0666" width="704" height="1216"/>
         <image name="새 파일 2017-01-04 20.58.41_1" width="688" height="1200"/>
         <image name="새 파일 2017-01-04 20.59.20_1" width="688" height="1216"/>
         <image name="새 파일 2017-01-04 20.59.51_1" width="704" height="1232"/>
