@@ -66,6 +66,10 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c5g-BG-iqb">
+                                <rect key="frame" x="0.0" y="0.0" width="370" height="618"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -73,7 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PgS-LS-ATo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2596" y="-764"/>
+            <point key="canvasLocation" x="2575.1999999999998" y="-809.14542728635683"/>
         </scene>
         <!--목록-->
         <scene sceneID="KH2-d7-eeZ">
@@ -167,7 +171,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k2n-ib-MFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5620" y="-143"/>
+            <point key="canvasLocation" x="6338" y="-154"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="w4o-na-yac">
@@ -191,7 +195,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="뒤로가기"/>
                                 <connections>
-                                    <action selector="modalDismiss:" destination="wG0-hi-ElD" eventType="touchUpInside" id="YHc-gg-F12"/>
+                                    <action selector="modalDismiss:" destination="wG0-hi-ElD" eventType="touchUpInside" id="Nnl-Lq-5VQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -199,9 +203,9 @@
                     </view>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="6399" y="-143"/>
+            <point key="canvasLocation" x="7030" y="-154"/>
         </scene>
-        <!--View Controller-->
+        <!--관심분야 정하기-->
         <scene sceneID="KYr-NC-FUT">
             <objects>
                 <viewController id="dLZ-yj-9tl" sceneMemberID="viewController">
@@ -217,22 +221,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhB-hq-DBd">
-                                <rect key="frame" x="313" y="46" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="modalDismissPush:" destination="dLZ-yj-9tl" eventType="touchUpInside" id="nFc-PI-K23"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqu-0t-9nt">
-                                <rect key="frame" x="13" y="46" width="52" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="뒤로가기"/>
-                                <connections>
-                                    <action selector="modalDismiss:" destination="dLZ-yj-9tl" eventType="touchUpInside" id="OHY-hT-Pki"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ht-RN-qDi">
                                 <rect key="frame" x="19" y="173" width="58" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -244,13 +232,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Vhg-J9-mJZ"/>
+                    <navigationItem key="navigationItem" title="관심분야 정하기" id="Vhg-J9-mJZ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="D1j-ce-WTH">
+                            <connections>
+                                <action selector="modalDismiss:" destination="dLZ-yj-9tl" id="6i4-s2-HJM"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Oxt-hC-9RF">
+                            <connections>
+                                <action selector="modalDismissPush:" destination="dLZ-yj-9tl" id="ePg-ev-hIE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c4h-lQ-dCa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6318" y="641"/>
+            <point key="canvasLocation" x="6303" y="641"/>
         </scene>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="Nwj-yf-CHF">
             <objects>
                 <viewController id="8ig-Wj-jvJ" sceneMemberID="viewController">
@@ -266,21 +265,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZa-sU-vH1">
-                                <rect key="frame" x="321" y="54" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="완료"/>
-                                <connections>
-                                    <action selector="modalDismissPush:" destination="8ig-Wj-jvJ" eventType="touchUpInside" id="ToY-hj-Urg"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="pJJ-GI-V94"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Title" id="Blx-g2-edZ"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="backHidden" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uoc-Qj-Nxr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7050" y="641"/>
+            <point key="canvasLocation" x="7004" y="641"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xJj-SX-VSh">
@@ -303,7 +302,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="86q-bp-SMh" kind="presentation" id="DwP-ur-bdf"/>
+                                    <segue destination="Bml-95-9Lq" kind="presentation" id="DwP-ur-bdf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ha7-P0-Ovd">
@@ -314,12 +313,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="aOT-ih-MUt"/>
+                    <navigationItem key="navigationItem" id="nNH-Tu-0RX"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mEF-AF-pqE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4356" y="-718"/>
+            <point key="canvasLocation" x="4378" y="-17"/>
         </scene>
         <!--홈-->
         <scene sceneID="tne-QT-ifu">
@@ -454,7 +453,7 @@
                         <segue destination="Njo-AG-Sjl" kind="relationship" relationship="viewControllers" id="FcX-Yl-OH5"/>
                         <segue destination="qgJ-Kx-afJ" kind="relationship" relationship="viewControllers" id="ZeE-Ic-m6u"/>
                         <segue destination="QGb-ct-E2p" kind="relationship" relationship="viewControllers" id="Ocu-LK-FYB"/>
-                        <segue destination="1Vv-CL-f7M" kind="relationship" relationship="viewControllers" id="B6J-gx-P6Y"/>
+                        <segue destination="fbb-og-h8t" kind="relationship" relationship="viewControllers" id="B6J-gx-P6Y"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5GV-iS-gIY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -516,6 +515,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rWh-vF-e35" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5581.6000000000004" y="640.92953523238384"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dVT-Qe-jT3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fbb-og-h8t" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="more" id="aOT-ih-MUt"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PPU-QA-HDQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1Vv-CL-f7M" kind="relationship" relationship="rootViewController" id="KIO-77-uIh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JEM-Ty-bpb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4356" y="-718.29085457271367"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Tky-ZV-4F1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bml-95-9Lq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aBI-P9-s1i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="86q-bp-SMh" kind="relationship" relationship="rootViewController" id="2CR-B6-uKz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VcF-go-YyZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5607" y="-154"/>
         </scene>
     </scenes>
     <resources>
