@@ -176,7 +176,6 @@
         <!--View Controller-->
         <scene sceneID="w4o-na-yac">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kzi-4G-vnS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="wG0-hi-ElD" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BId-QU-wmt"/>
@@ -202,6 +201,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kzi-4G-vnS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7030" y="-154"/>
         </scene>
@@ -271,7 +271,18 @@
                     <toolbarItems>
                         <barButtonItem title="Item" id="pJJ-GI-V94"/>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" title="Title" id="Blx-g2-edZ"/>
+                    <navigationItem key="navigationItem" title="Title" id="Blx-g2-edZ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="6y5-MF-I2u">
+                            <connections>
+                                <action selector="modalDismiss:" destination="8ig-Wj-jvJ" id="Tpe-FR-Q3s"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="mZA-VG-1HO">
+                            <connections>
+                                <action selector="modalDismissPush:" destination="8ig-Wj-jvJ" id="IBC-1G-pFJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="backHidden" value="YES"/>
