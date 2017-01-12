@@ -16,6 +16,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A40D12CD1E27734300A01BC6 /* CHPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CHPickerViewController.swift; path = ../../../PilotPlant/Sources/CHPickerViewController.swift; sourceTree = "<group>"; };
+		A40D12CF1E27735400A01BC6 /* CHContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CHContentViewController.swift; path = /Volumes/CodersHigh/Repos/PilotPlant/Sources/../../../../../Users/cscoi046/Documents/PilotPlant/Sources/CHContentViewController.swift; sourceTree = "<absolute>"; };
+		A40D12D01E27735400A01BC6 /* CHControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CHControls.swift; path = /Volumes/CodersHigh/Repos/PilotPlant/Sources/../../../../../Users/cscoi046/Documents/PilotPlant/Sources/CHControls.swift; sourceTree = "<absolute>"; };
+		A40D12D11E27735400A01BC6 /* CHModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CHModalViewController.swift; path = /Volumes/CodersHigh/Repos/PilotPlant/Sources/../../../../../Users/cscoi046/Documents/PilotPlant/Sources/CHModalViewController.swift; sourceTree = "<absolute>"; };
+		A40D12D21E27735400A01BC6 /* CHPagingScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CHPagingScrollViewController.swift; path = /Volumes/CodersHigh/Repos/PilotPlant/Sources/../../../../../Users/cscoi046/Documents/PilotPlant/Sources/CHPagingScrollViewController.swift; sourceTree = "<absolute>"; };
+		A40D12D31E27735400A01BC6 /* CHPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CHPickerViewController.swift; path = /Volumes/CodersHigh/Repos/PilotPlant/Sources/../../../../../Users/cscoi046/Documents/PilotPlant/Sources/CHPickerViewController.swift; sourceTree = "<absolute>"; };
+		A40D12D41E27735400A01BC6 /* DrawingCanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingCanvasView.swift; path = /Volumes/CodersHigh/Repos/PilotPlant/Sources/../../../../../Users/cscoi046/Documents/PilotPlant/Sources/DrawingCanvasView.swift; sourceTree = "<absolute>"; };
+		A40D12D51E27735400A01BC6 /* FIlters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FIlters.swift; path = /Volumes/CodersHigh/Repos/PilotPlant/Sources/../../../../../Users/cscoi046/Documents/PilotPlant/Sources/FIlters.swift; sourceTree = "<absolute>"; };
+		A40D12D61E27735400A01BC6 /* NavigationControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationControllers.swift; path = /Volumes/CodersHigh/Repos/PilotPlant/Sources/../../../../../Users/cscoi046/Documents/PilotPlant/Sources/NavigationControllers.swift; sourceTree = "<absolute>"; };
+		A40D12D71E27735400A01BC6 /* RecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordButton.swift; path = /Volumes/CodersHigh/Repos/PilotPlant/Sources/../../../../../Users/cscoi046/Documents/PilotPlant/Sources/RecordButton.swift; sourceTree = "<absolute>"; };
 		E58F746C1E1E2FAF00E96331 /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
 		E5A3470A1E1CF26500CFC119 /* mentoti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mentoti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A3470D1E1CF26500CFC119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +69,16 @@
 				E5A3470D1E1CF26500CFC119 /* AppDelegate.swift */,
 				E58F746C1E1E2FAF00E96331 /* UIViewController+Navigation.swift */,
 				E5A3470F1E1CF26500CFC119 /* ViewController.swift */,
+				A40D12CD1E27734300A01BC6 /* CHPickerViewController.swift */,
+				A40D12CF1E27735400A01BC6 /* CHContentViewController.swift */,
+				A40D12D01E27735400A01BC6 /* CHControls.swift */,
+				A40D12D11E27735400A01BC6 /* CHModalViewController.swift */,
+				A40D12D21E27735400A01BC6 /* CHPagingScrollViewController.swift */,
+				A40D12D31E27735400A01BC6 /* CHPickerViewController.swift */,
+				A40D12D41E27735400A01BC6 /* DrawingCanvasView.swift */,
+				A40D12D51E27735400A01BC6 /* FIlters.swift */,
+				A40D12D61E27735400A01BC6 /* NavigationControllers.swift */,
+				A40D12D71E27735400A01BC6 /* RecordButton.swift */,
 				E5A347111E1CF26500CFC119 /* Main.storyboard */,
 				E5A347141E1CF26500CFC119 /* Assets.xcassets */,
 				E5A347161E1CF26500CFC119 /* LaunchScreen.storyboard */,

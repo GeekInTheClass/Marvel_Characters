@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8ACD28A38C5E7972DF77A2772C4E2FED5667C680",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8ACD28A38C5E7972DF77A2772C4E2FED5667C680" : 9223372036854775807,
+    "253940EFFD57AA0C844632FA47CFF566158B5D5C" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D42A9917-EF2E-478F-A854-B3C8D0CAD715",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8ACD28A38C5E7972DF77A2772C4E2FED5667C680" : "Marvel_Characters\/",
+    "253940EFFD57AA0C844632FA47CFF566158B5D5C" : "PilotPlant\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "mentoti",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "mentoti\/mentoti.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lingostar\/PilotPlant.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "253940EFFD57AA0C844632FA47CFF566158B5D5C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/GeekInTheClass\/Marvel_Characters.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8ACD28A38C5E7972DF77A2772C4E2FED5667C680"
+    }
+  ]
+}
